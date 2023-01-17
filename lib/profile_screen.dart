@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/widgets/app_bar_widget.dart';
 import 'package:profile_app/widgets/avatar_widget.dart';
 import 'package:profile_app/widgets/name_widget.dart';
 import 'package:profile_app/widgets/select_type_widget.dart';
@@ -9,7 +10,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: const AppBarWidget(),
       body: Column(
         children: const [
           AvatarWidget(),

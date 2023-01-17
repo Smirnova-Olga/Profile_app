@@ -4,7 +4,7 @@ import 'package:profile_app/gen/assets.gen.dart';
 import 'package:profile_app/theme/app_text_theme.dart';
 import 'package:profile_app/theme/colors_theme.dart';
 
-class AppBarWidget extends StatelessWidget {
+class AppBarWidget extends StatelessWidget implements PreferredSizeWidget {
   const AppBarWidget({super.key});
 
   @override
@@ -33,4 +33,7 @@ class AppBarWidget extends StatelessWidget {
       ],
     );
   }
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }

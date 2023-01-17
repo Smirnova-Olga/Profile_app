@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile_app/profile_screen.dart';
 import 'package:profile_app/theme/app_text_theme.dart';
 import 'package:profile_app/theme/colors_theme.dart';
+import 'package:profile_app/widgets/app_devider.dart';
 
 class SelectTypeWidget extends StatefulWidget {
   const SelectTypeWidget({super.key});

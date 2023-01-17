@@ -11,7 +11,7 @@ class SelectTypeWidget extends StatefulWidget {
 }
 
 class _SelectTypeWidgetState extends State<SelectTypeWidget> {
-  final List<String> selectType = [
+  final List<String> _selectType = [
     'Black',
     'Bold',
     'Medium',
@@ -36,7 +36,7 @@ class _SelectTypeWidgetState extends State<SelectTypeWidget> {
           height: 45,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
-            itemCount: selectType.length,
+            itemCount: _selectType.length,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
                 onTap: () {
@@ -59,7 +59,7 @@ class _SelectTypeWidgetState extends State<SelectTypeWidget> {
                     padding:
                         const EdgeInsets.symmetric(vertical: 6, horizontal: 12),
                     child: Text(
-                      selectType[index],
+                      _selectType[index],
                       style: _activeIndex == index
                           ? AppTextTheme.body2
                               .copyWith(color: ColorsTheme.voilet500)

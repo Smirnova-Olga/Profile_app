@@ -44,6 +44,18 @@ class $AssetsImagesGen {
   /// File path: assets/images/avatar.png
   AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
 
+  /// File path: assets/images/avatar1.png
+  AssetGenImage get avatar1 => const AssetGenImage('assets/images/avatar1.png');
+
+  /// File path: assets/images/avatar2.png
+  AssetGenImage get avatar2 => const AssetGenImage('assets/images/avatar2.png');
+
+  /// File path: assets/images/avatar3.png
+  AssetGenImage get avatar3 => const AssetGenImage('assets/images/avatar3.png');
+
+  /// File path: assets/images/avatar4.png
+  AssetGenImage get avatar4 => const AssetGenImage('assets/images/avatar4.png');
+
   /// File path: assets/images/rectangle10.png
   AssetGenImage get rectangle10 =>
       const AssetGenImage('assets/images/rectangle10.png');
@@ -83,6 +95,10 @@ class $AssetsImagesGen {
   /// List of all assets
   List<AssetGenImage> get values => [
         avatar,
+        avatar1,
+        avatar2,
+        avatar3,
+        avatar4,
         rectangle10,
         rectangle11,
         rectangle12,

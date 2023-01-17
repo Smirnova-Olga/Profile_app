@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:profile_app/gen/assets.gen.dart';
 import 'package:profile_app/models/friend.dart';
 import 'package:profile_app/theme/app_text_theme.dart';
 import 'package:profile_app/theme/colors_theme.dart';
@@ -28,6 +30,7 @@ class FriendsWidget extends StatelessWidget {
           position: 'Developer',
           avatar: 'assets/images/avatar4.png'),
     ];
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -64,6 +67,35 @@ class FriendsWidget extends StatelessWidget {
               );
             },
           ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: OutlinedButton(
+            style: OutlinedButton.styleFrom(
+              foregroundColor: ColorsTheme.black,
+              fixedSize: const Size.fromWidth(400),
+            ),
+            onPressed: () {},
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'ADD FRIEND ',
+                  style: AppTextTheme.button,
+                ),
+                SvgPicture.asset(
+                  Assets.icons.vector.path,
+                  color: ColorsTheme.black,
+                  height: 14,
+                  width: 14,
+                )
+              ],
+            ),
+          ),
+        ),
+        const Padding(
+          padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+          child: AppDivider(),
         ),
       ],
     );

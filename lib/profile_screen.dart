@@ -12,13 +12,15 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: const AppBarWidget(),
-      body: Column(
-        children: const [
-          AvatarWidget(),
-          NameWidget(),
-          SelectTypeWidget(),
-          FriendsWidget(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            AvatarWidget(),
+            NameWidget(),
+            SelectTypeWidget(),
+            FriendsWidget(),
+          ],
+        ),
       ),
     );
   }

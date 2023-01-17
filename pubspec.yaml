@@ -26,9 +26,23 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+   # указываем кастомные шрифты
+  fonts:
+    # название семейства шрифтов
+    - family: Roboto
+      fonts:
+        # для каждого файла шрифта мы прописываем 
+        # соответствующие параметры
+        - asset: assets/fonts/Roboto-Regular.ttf
+          weight: 400
+          style: normal
+        - asset: assets/fonts/Roboto-Medium.ttf
+          weight: 500
+          style: normal
+       
   assets:
      - assets/icons/
-  #   - images/a_dot_ham.jpeg
+     - assets/images/
 
  
 #flutter packages pub run build_runner build --delete-conflicting-outputs

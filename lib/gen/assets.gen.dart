@@ -38,10 +38,68 @@ class $AssetsIconsGen {
       [back, close, drawer, menu, placeholder, vector];
 }
 
+class $AssetsImagesGen {
+  const $AssetsImagesGen();
+
+  /// File path: assets/images/avatar.png
+  AssetGenImage get avatar => const AssetGenImage('assets/images/avatar.png');
+
+  /// File path: assets/images/rectangle10.png
+  AssetGenImage get rectangle10 =>
+      const AssetGenImage('assets/images/rectangle10.png');
+
+  /// File path: assets/images/rectangle11.png
+  AssetGenImage get rectangle11 =>
+      const AssetGenImage('assets/images/rectangle11.png');
+
+  /// File path: assets/images/rectangle12.png
+  AssetGenImage get rectangle12 =>
+      const AssetGenImage('assets/images/rectangle12.png');
+
+  /// File path: assets/images/rectangle13.png
+  AssetGenImage get rectangle13 =>
+      const AssetGenImage('assets/images/rectangle13.png');
+
+  /// File path: assets/images/rectangle14.png
+  AssetGenImage get rectangle14 =>
+      const AssetGenImage('assets/images/rectangle14.png');
+
+  /// File path: assets/images/rectangle6.png
+  AssetGenImage get rectangle6 =>
+      const AssetGenImage('assets/images/rectangle6.png');
+
+  /// File path: assets/images/rectangle7.png
+  AssetGenImage get rectangle7 =>
+      const AssetGenImage('assets/images/rectangle7.png');
+
+  /// File path: assets/images/rectangle8.png
+  AssetGenImage get rectangle8 =>
+      const AssetGenImage('assets/images/rectangle8.png');
+
+  /// File path: assets/images/rectangle9.png
+  AssetGenImage get rectangle9 =>
+      const AssetGenImage('assets/images/rectangle9.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        avatar,
+        rectangle10,
+        rectangle11,
+        rectangle12,
+        rectangle13,
+        rectangle14,
+        rectangle6,
+        rectangle7,
+        rectangle8,
+        rectangle9
+      ];
+}
+
 class Assets {
   Assets._();
 
   static const $AssetsIconsGen icons = $AssetsIconsGen();
+  static const $AssetsImagesGen images = $AssetsImagesGen();
 }
 
 class AssetGenImage {

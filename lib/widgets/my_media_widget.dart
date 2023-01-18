@@ -56,7 +56,7 @@ class GridPhotosWidget extends StatelessWidget {
       'assets/images/rectangle14.png',
     ];
     return Container(
-        height: 400,
+        height: 385,
         padding: const EdgeInsets.only(top: 16),
         child: GridView.builder(
           gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -66,38 +66,36 @@ class GridPhotosWidget extends StatelessWidget {
           ),
           itemCount: photo.length,
           itemBuilder: (context, index) {
-            return Expanded(
-              child: Stack(
-                fit: StackFit.expand,
-                children: [
-                  FittedBox(
-                    fit: BoxFit.cover,
-                    child: Image(
-                      image: AssetImage(photo[index]),
-                    ),
+            return Stack(
+              fit: StackFit.expand,
+              children: [
+                FittedBox(
+                  fit: BoxFit.cover,
+                  child: Image(
+                    image: AssetImage(photo[index]),
                   ),
-                  Positioned(
-                    top: 8,
-                    right: 8,
-                    child: Container(
-                      padding: const EdgeInsets.all(6.5),
-                      decoration: BoxDecoration(
-                        color: ColorsTheme.red200,
-                        border: Border.all(
-                          color: ColorsTheme.white,
-                        ),
-                        borderRadius: BorderRadius.circular(50),
-                      ),
-                      width: 24,
-                      height: 24,
-                      child: SvgPicture.asset(
-                        Assets.icons.close.path,
+                ),
+                Positioned(
+                  top: 8,
+                  right: 8,
+                  child: Container(
+                    padding: const EdgeInsets.all(6.5),
+                    decoration: BoxDecoration(
+                      color: ColorsTheme.red200,
+                      border: Border.all(
                         color: ColorsTheme.white,
                       ),
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    width: 24,
+                    height: 24,
+                    child: SvgPicture.asset(
+                      Assets.icons.close.path,
+                      color: ColorsTheme.white,
                     ),
                   ),
-                ],
-              ),
+                ),
+              ],
             );
           },
         ));

@@ -54,9 +54,11 @@ class FriendsWidget extends StatelessWidget {
                 title: Text(friends[index].name, style: AppTextTheme.subtitle1),
                 subtitle:
                     Text(friends[index].position, style: AppTextTheme.body2),
-                trailing: const Icon(
-                  Icons.close,
+                trailing: SvgPicture.asset(
+                  Assets.icons.close.path,
                   color: ColorsTheme.red200,
+                  height: 14,
+                  width: 14,
                 ),
               );
             },

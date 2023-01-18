@@ -28,11 +28,11 @@ class _SelectTypeWidgetState extends State<SelectTypeWidget> {
           padding: EdgeInsets.fromLTRB(16, 15, 0, 15),
           child: Text(
             'Select type',
-            style: AppTextTheme.body1,
+            style: AppTextTheme.body2,
           ),
         ),
         Container(
-          padding: const EdgeInsets.fromLTRB(16, 5, 7, 8),
+          padding: const EdgeInsets.fromLTRB(16, 5, 0, 8),
           height: 45,
           child: ListView.separated(
             scrollDirection: Axis.horizontal,
@@ -78,7 +78,7 @@ class _SelectTypeWidgetState extends State<SelectTypeWidget> {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.fromLTRB(16, 10, 16, 0),
+          padding: EdgeInsets.only(top: 10),
           child: AppDivider(),
         ),
       ],

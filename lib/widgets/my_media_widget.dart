@@ -80,7 +80,7 @@ class GridPhotosWidget extends StatelessWidget {
                     top: 8,
                     right: 8,
                     child: Container(
-                      padding: const EdgeInsets.all(8),
+                      padding: const EdgeInsets.all(6.5),
                       decoration: BoxDecoration(
                         color: ColorsTheme.red200,
                         border: Border.all(

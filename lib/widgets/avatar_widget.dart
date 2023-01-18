@@ -31,12 +31,13 @@ class AvatarWidget extends StatelessWidget {
                 ),
                 width: 36,
                 height: 36,
-                child: SvgPicture.asset(
-                  Assets.icons.vector.path,
-                  color: ColorsTheme.white,
-                  height: 5,
-                  width: 5,
-                  fit: BoxFit.scaleDown,
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: SvgPicture.asset(
+                    Assets.icons.vector.path,
+                    color: ColorsTheme.white,
+                    fit: BoxFit.fill,
+                  ),
                 ),
               ),
             ),

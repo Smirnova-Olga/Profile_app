@@ -17,7 +17,7 @@ class NameWidget extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 5),
+          padding: const EdgeInsets.only(top: 3),
           child: Text(
             'Developer',
             style: AppTextTheme.caption.copyWith(
@@ -26,7 +26,7 @@ class NameWidget extends StatelessWidget {
           ),
         ),
         const Padding(
-          padding: EdgeInsets.fromLTRB(16, 25, 16, 0),
+          padding: EdgeInsets.only(top: 25),
           child: AppDivider(),
         ),
       ],
